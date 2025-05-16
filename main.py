@@ -36,7 +36,12 @@ class TriangleTester:
             self.case_count += 5
 
 
-
+        try:
+            if float(a) + float(b) <= float(c) or float(a) + float(c) <= float(b) or float(b) + float(c) <= float(a):
+                print("Кейс 8: Не треугольник пройден.")
+                self.case_count += 1
+        except ValueError:
+            pass
 
 
         try:
